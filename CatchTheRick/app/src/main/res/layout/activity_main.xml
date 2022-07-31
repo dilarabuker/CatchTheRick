@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="328dp"
+        android:layout_height="427dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/skorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="109dp"
+            android:layout_height="132dp"
+            android:onClick="scoreArttir"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="127dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="24dp"
+        android:text="Time: 10"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skorText"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="33dp"
+        android:text="Skor: 0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
