@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView [] imageArray;
 
     Handler handler; //runnable'ı kullanabilmemiz için gerekli olan sınıf.
-    Runnable runnable;
+    Runnable runnable; //Bir işlemin birden fazla kez belli periyotlarla çalışmasını istersek Runnable Kullanabiliriz
 
     int score;
     @Override
